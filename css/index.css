@@ -1,0 +1,157 @@
+@font-face {
+    font-family: "RobotoCondensed-Regular";
+    src: url("../fonts/roboto/RobotoCondensed-Regular.eot");
+    src: url("../fonts/roboto/RobotoCondensed-Regular.eot?#iefix")
+        format("embedded-opentype"),
+      url("../fonts/roboto/RobotoCondensed-Regular.svg#RobotoCondensed-Regular")
+        format("svg"),
+      url("../fonts/roboto/RobotoCondensed-Regular.ttf") format("truetype"),
+      url("../fonts/roboto/RobotoCondensed-Regular.woff") format("woff"),
+      url("../fonts/roboto/RobotoCondensed-Regular.woff2") format("woff2");
+    font-weight: normal;
+    font-style: normal;
+  }
+
+body {
+/*     background-image: url("../pictures/bgset.png");
+    background-position: top; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: "RobotoCondensed-Regular", Arial, Sans-serif;
+}
+.nav {
+    padding-top: 15px;
+    width: 1110px;
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+.menu {
+    padding-left: 70px;
+    display:flex;
+    flex-direction: row;
+    flex-grow: 0;
+    width: 450px;
+    justify-content: space-around;
+    list-style: none;
+    font-size: 16px;
+  
+
+}
+.menu a{
+    text-decoration: none;
+}
+.firstone:hover::after{
+    display:block;
+    content:"";
+    position: absolute ;
+    width: 77px;;
+    height:5px;
+    background:black;
+    border:solid 1px;
+    border-radius:5px; 
+    margin-top: 10px;
+  }
+  .secondone:hover::after{
+    display:block;
+    content:"";
+    position: absolute ;
+    width: 58px;;
+    height:5px;
+    background:black;
+    border:solid 1px;
+    border-radius:5px; 
+    margin-top: 10px;
+  }
+  .thirdone:hover::after{
+    display:block;
+    content:"";
+    position: absolute ;
+    width: 125px;;
+    height:5px;
+    background:black;
+    border:solid 1px;
+    border-radius:5px; 
+    margin-top: 10px;
+  }
+.righttop {
+    display: flex;
+    align-items: center;
+    width: 200px;
+    padding-right: 5px;
+   cursor: pointer;
+}
+.mainris {
+  display:flex;
+  flex-direction:row;
+  width:50px;
+  height:50px;
+  align-items:center;
+  justify-content:center;
+ /* background:green;*/
+   transform:rotate(0deg);
+}
+.ris {
+  background-color:black;
+  width:50px;
+  height:8px;
+  border-radius:5px;
+}
+.mainris .ris:first-child {
+   transform-origin:0;
+}
+.mainris .ris:first-child {
+  transform:rotate(58deg);
+}
+.mainris .ris:last-child {
+  transform:rotate(122deg);
+}
+.mainris .ris:last-child {
+  transform-origin:0;
+}
+.langs {
+    width: 25px;
+    height: 27px;
+    background-image: url("../pictures/ruflag.png");
+    border: solid 1px;
+    margin-right: 5px;
+    cursor: pointer;
+    z-index: 2;
+}
+.regbutton {
+    background-image:linear-gradient(45deg,#9150d9 0,#5699ff 99%) ;
+    color: #ffffff;
+    border-radius: 5px;
+    width: 142px;
+    height: 38px;
+    display: flex;
+    margin-right: 20px;
+    justify-content: center;
+    align-items: center;
+}
+.regbutton::after {
+ 
+    background-color: white;
+    width: 96%;
+    height: 89%;
+    content: '';
+    border-radius: 5px;
+    
+}
+.regbutton span {
+    position: absolute;
+    color: #975dd7;
+    z-index: 1;
+}
+.regbutton:hover::after{
+    background-image:linear-gradient(45deg,#9150d9 0,#5699ff 99%) ;
+    background-color: none;
+    clear:all;
+}
+.regbutton:hover span{
+    color: white;
+}
+.list {
+    display: none;
+}
