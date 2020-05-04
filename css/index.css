@@ -1,0 +1,322 @@
+.container {
+   width: 1100px; 
+   margin: auto;
+}
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 20px;
+}
+.nav__list {
+    display: flex;
+}
+.nav__list__item a{
+    text-decoration: none;
+    position: relative;
+}
+.nav__list__item:not(:last-child) {
+    padding-right: 15px;
+}
+.nav__list__item a::after {
+    content: "";
+    position: absolute;
+    display: none;
+    left: 0;
+    right: 0;
+    height: 3px;
+    bottom: -5px;
+    background-color: currentColor;
+}
+.nav__list__item a:hover::after {
+    display: block;
+}
+.center-flex {
+    display: flex;
+    align-items: center;
+}
+.nav__regandlang__reg {
+    padding: 8px 20px;  
+    border: 3px solid;
+    border-color:#9150d9;
+    border-radius: 5px;
+    margin-right: 10px;
+    text-decoration: none;
+}
+.nav__regandlang__reg:hover {
+    background-color: #9150d9;
+    color: white;
+}
+.nav__regandlang__lang img:first-child {
+    padding-right: 5px;
+}
+.nav__regandlang__dropout a{
+    text-decoration: none;
+}
+.nav {
+padding-bottom: 40px;
+}
+#dropjs {
+    display: none;
+    position: absolute;
+}
+#dropjs.popupjs {
+display: block;
+}
+#arrowjs{
+    transition: transform 0.3s;
+}
+#arrowjs.rotatorjs{
+    transform: rotate(180deg);
+}
+.button-inverse {
+    padding: 20px 50px;
+    border: solid 3px;
+    border-radius: 5px;
+    text-decoration: none;
+    background-color: #9150d9;
+    border-color: #9150d9;
+    color: white;
+    margin-right: 20px;
+}
+.button-inverse:hover {
+    color: #9150d9;
+    background-color: white;
+}
+
+.seminar {
+    background-image: url("../pictures/seminar/seminarbg.png");
+    background-repeat:no-repeat;
+    background-position:100% 0%;
+    background-size: 100%;
+    height: 550px;
+    padding-bottom: 40px ;
+}
+.seminar__h1  {
+    font-size: 80px;
+    padding-right: 30px;
+}
+.seminar__top {
+    display: flex;
+    align-items: center;
+}
+.seminar__top p{
+color: blue;
+}
+.seminar__locpic {
+    width: 62px;
+    height: 54px;
+    padding-right: 20px;
+}
+.seminar__second-text {
+    padding-left: 40px;
+    max-width: 600px;
+    font-size: 40px;
+    padding-bottom: 30px;
+}
+.seminar__middle-section{
+    display: flex;
+    align-items: center;
+    padding-bottom: 40px;
+}
+.seminar__slider {
+    width: 300px;
+    padding-left: 40px;
+}
+.seminar__slider .seminar__slider__header {
+    font-weight: bold;
+    padding-bottom: 20px;
+}
+.common-header {
+    font-size: 35px;
+    text-align: center;
+    padding-bottom: 50px;
+}
+.poslushai {
+    padding-bottom: 70px;
+}
+.poslushai__outer-container {
+    display: flex;
+    justify-content: space-around;
+}
+.poslushai__outer-container__column {
+    max-width: 150px;
+    text-align: center;
+}
+.poslushai__outer-container__column img {
+    padding-bottom: 30px;
+}
+.poslushai__outer-container__column h3{
+    font-weight: bold;
+    font-size: 20px;
+    padding-bottom: 15px;
+}
+.spikery {
+    padding-bottom: 70px;
+    background-image: url("../pictures/spikery/bg.png");
+    background-size: 100%;
+    background-repeat: repeat-x;
+    background-position: 100% 50%;
+}
+.spikery__outer-container {
+    display: flex;
+    justify-content: space-around;
+}
+.spikery__outer-container__column {
+    max-width: 280px;
+    background-color: #fff;
+}
+.spikery__outer-container__column__inner-column {
+    display: flex;
+    align-items: center;
+}
+.dots  {
+    display: block;
+    margin: auto;
+    padding-bottom: 20px;
+}
+.spikery__outer-container__column__inner-column p {
+    font-weight: bold;
+    font-size: 20px;
+}
+.spikery__outer-container__column__inner-column img {
+  width: 100%;
+}
+.chto {
+    padding-bottom: 90px;
+}
+/* .slick-slide.slick-current {
+    background-image: linear-gradient(to left, rgba(0, 0, 0, 0), rgb(0, 0, 0, 1));
+} */
+.chto__slider .slick-list.draggable{
+    background-image: radial-gradient(circle,rgba(0, 0, 0, 0) 40%, rgb(0, 0, 0), rgb(0, 0, 0)); }
+}
+.blue_text {
+    color: blue;
+}
+.center_text {
+    text-align: center;
+}
+.pillowman {
+    background-image: url("../pictures/pillowman/bg.png");
+    background-repeat: no-repeat;
+    background-size: 77%;
+    background-position: center;
+    padding-bottom: 60px;
+}
+.pillowman_midrow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 20px;
+}
+.pillowman__midrow__column h5{
+    font-weight: bold;
+    font-size: 20px;
+    padding-bottom: 10px;
+}
+.text_box {
+ max-width: 150px;
+}
+.margin_auto {
+    margin:auto;
+}
+.pillowman__text {
+    padding-bottom: 10px;
+}
+.reg {
+    background-image: url("../pictures/reg/bg.png");
+    background-repeat: no-repeat;
+    background-size: 50%;
+    background-position: center;
+    padding-bottom: 60px;
+}
+.reg__form {
+    margin: auto;
+    max-width: 185px;
+    background: #fff;
+    text-align: center;
+}
+.reg__form__container {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  
+  /* Hide the browser's default radio button */
+  .reg__form__container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+  }
+  
+  /* Create a custom radio button */
+  .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: white;
+    border-radius: 50%;
+    border:solid 1px purple;
+  }
+  
+  /* On mouse-over, add a grey background color */
+  .reg__form__container:hover input ~ .checkmark {
+    background-color: #ccc;
+  }
+  
+  /* When the radio button is checked, add a blue background */
+  .reg__form__container input:checked ~ .checkmark {
+    background-color: white;
+  }
+  
+  /* Create the indicator (the dot/circle - hidden when not checked) */
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+  /* Show the indicator (dot/circle) when checked */
+  .reg__form__container input:checked ~ .checkmark:after {
+    display: block;
+  }
+  
+  /* Style the indicator (dot/circle) */
+  .reg__form__container .checkmark:after {
+       top: 20%;
+      left: 20%;
+      width: 15px;
+      height: 15px;
+      border-radius: 50%;
+      background: purple;
+  }
+  .footer {
+      width: 100%;
+      background-color: #f1f3fd;
+      border-top: solid 3px purple;
+      height: 230px;
+  }
+  .footer__row {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      padding-top: 50px;
+      padding-bottom: 30px;
+  }
+  .footer__last-row {
+      text-align: center;
+  }
+  .footer__last-row a{
+      display: block;
+    padding-bottom: 15px;
+}
